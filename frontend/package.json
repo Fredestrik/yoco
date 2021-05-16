@@ -1,0 +1,23 @@
+{
+  "name": "yoco-frontend",
+  "version": "1.0.0",
+  "description": "frontend of the Yoco CMS",
+  "main": "index.js",
+  "scripts": {
+    "start": "ejs ./pages/index.ejs -o ./dist/index.html",
+    "watch": "livereload & nodemon --exec 'ejs ./pages/index.ejs -o ./dist/index.html' -e \"ejs\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yoco"
+  ],
+  "author": "Fredestrik",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6"
+  },
+  "devDependencies": {
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.7"
+  }
+}
